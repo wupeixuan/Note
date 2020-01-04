@@ -173,3 +173,7 @@
 [如何优雅地在Stack Overflow提问？](https://mp.weixin.qq.com/s/INPm6eS4OhtAH8n5vI8psg)
 
 [代码重构有什么意义？为什么重构有用？](https://mp.weixin.qq.com/s/1IyWSehaHbUb5Cj0llOeJw)
+
+## 工具
+
+[IDEA到期了？不用怕，最新的永久激活送给你](https://mp.weixin.qq.com/s/3Ksc7rnVo4n6bu2k2M1bwQ)
