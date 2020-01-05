@@ -66,6 +66,8 @@
 
 [浅析 Nginx 网络事件](https://mp.weixin.qq.com/s/sNrZPbGxN-YLCOz0RocqxA)
 
+[Nginx 究竟如何处理事件？](https://mp.weixin.qq.com/s/2o_lzhyIvuYm1l9wJSCWPA)
+
 ## MySQL
 
 [数据库事务的四大特性以及隔离级别](https://mp.weixin.qq.com/s/Y-qYIEShHCEKYQHZnMLSeQ)
