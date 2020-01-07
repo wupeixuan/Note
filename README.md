@@ -179,3 +179,5 @@
 ## 工具
 
 [IDEA到期了？不用怕，最新的永久激活送给你](https://mp.weixin.qq.com/s/3Ksc7rnVo4n6bu2k2M1bwQ)
+
+[后缀补全用得好，提前下班没烦恼](https://mp.weixin.qq.com/s/qDtc46iNq_s0VpQbLyBZXw)
