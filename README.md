@@ -4,6 +4,14 @@
 
 专注分享后端技术干货，包括 Java 基础、Java 并发、JVM、Nginx、Zookeeper、微服务、消息队列、源码解析、数据库、设计模式、面经等，助你编程之路少走弯路。
 
+# 后端技术交流群
+
+有一句话说得很好，一个人学习可以走得很快，但一群人学习可以走得更远。
+
+所以，如果你想和众多优秀的人一起学习，可以考虑加入技术交流群。
+
+![后端技术交流群](https://img-blog.csdnimg.cn/20200110145949264.jpg)
+
 ## Java
 
 [为什么阿里巴巴Java开发手册中不建议在循环体中使用+进行字符串拼接？](https://mp.weixin.qq.com/s/dc7HW0SqEcJknMIqoQZnlg)
@@ -175,6 +183,8 @@
 [如何优雅地在Stack Overflow提问？](https://mp.weixin.qq.com/s/INPm6eS4OhtAH8n5vI8psg)
 
 [代码重构有什么意义？为什么重构有用？](https://mp.weixin.qq.com/s/1IyWSehaHbUb5Cj0llOeJw)
+
+[2020 年 Java 程序员应该学习什么？](https://mp.weixin.qq.com/s/Oz_mm6RbSvQPjyDAvpQt4w)
 
 ## 工具
 
