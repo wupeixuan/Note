@@ -20,11 +20,15 @@
 
 ## Java
 
+[2020 年 Java 程序员应该学习什么？](https://mp.weixin.qq.com/s/Oz_mm6RbSvQPjyDAvpQt4w)
+
 [为什么阿里巴巴Java开发手册中不建议在循环体中使用+进行字符串拼接？](https://mp.weixin.qq.com/s/dc7HW0SqEcJknMIqoQZnlg)
 
 [为什么阿里巴巴Java开发手册中强制要求整型包装类对象值用 equals 方法比较？](https://mp.weixin.qq.com/s/uP9Jy75OlwavPGwVabOl8A)
 
 [为什么阿里巴巴Java开发手册中强制要求不要在foreach循环里进行元素的remove和add操作？](https://mp.weixin.qq.com/s/q4S6dCIwtDbuQ4KxSBItqA)
+
+[最大的 String 字符长度是多少？](https://mp.weixin.qq.com/s/MLoN0SZc0s_H3GcGMfoYhA)
 
 [为什么不建议使用Date，而是使用Java8新的时间和日期API？](https://mp.weixin.qq.com/s/eMtrhOMuXpvs3s_o9yA99Q)
 
@@ -189,8 +193,6 @@
 [如何优雅地在Stack Overflow提问？](https://mp.weixin.qq.com/s/INPm6eS4OhtAH8n5vI8psg)
 
 [代码重构有什么意义？为什么重构有用？](https://mp.weixin.qq.com/s/1IyWSehaHbUb5Cj0llOeJw)
-
-[2020 年 Java 程序员应该学习什么？](https://mp.weixin.qq.com/s/Oz_mm6RbSvQPjyDAvpQt4w)
 
 ## 工具
 
