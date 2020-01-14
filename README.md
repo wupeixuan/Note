@@ -1,6 +1,6 @@
-# 微信公众号【武培轩】
+# 微信公众号
 
-![微信公众号【武培轩】](https://img-blog.csdnimg.cn/20200110151256933.png)
+![微信公众号](https://img-blog.csdnimg.cn/20200110151256933.png)
 
 专注分享后端技术干货，包括 Java 基础、Java 并发、JVM、Nginx、Zookeeper、微服务、消息队列、源码解析、数据库、设计模式、面经等，助你编程之路少走弯路。
 
@@ -155,6 +155,8 @@
 [Ansible自动化运维-Ansible组件介绍](https://mp.weixin.qq.com/s/qlToA4_1k5XepUHX5fXljA)
 
 ## Git
+
+[请停止编写糟糕的提交消息！](https://mp.weixin.qq.com/s/VItk9iKdXitjSYkVCTxq2g)
 
 [看完这篇还不会用Git，那我就哭了！](https://mp.weixin.qq.com/s/JOCfkKPQE3UvwhP7h9_UmA)
 
