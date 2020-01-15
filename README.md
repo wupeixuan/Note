@@ -60,6 +60,8 @@
 
 [JVM类加载过程与双亲委派模型](https://mp.weixin.qq.com/s/mUCmntvFK5CoWOTcXUUI5A)
 
+[Full GC 和 Minor GC，傻傻分不清楚](https://mp.weixin.qq.com/s/zlc2UKMoYlFrUcGVb3_8rw)
+
 [请停止编写这么多的for循环！](https://mp.weixin.qq.com/s/7vn0ZSOkInK7oyPwh3SaQA)
 
 ## Nginx
