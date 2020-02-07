@@ -27,11 +27,7 @@
 
 有一句话说得很好，一个人学习可以走得很快，但一群人学习可以走得更远。
 
-所以，如果你想和众多优秀的人一起学习，可以考虑加入技术交流群。
-
-![后端技术交流群](https://img-blog.csdnimg.cn/20200110151138472.png)
-
-如果二维码过期或者微信群人数超过200人，可以扫描微信二维码，备注【加群】添加好友，我会迅速拉你进群。
+所以，如果你想和众多优秀的人一起学习，可以考虑加入技术交流群。扫描微信二维码，备注【加群】添加好友，我会迅速拉你进群。
 
 ![微信二维码](https://img-blog.csdnimg.cn/202001101531450.jpg)
 
@@ -82,6 +78,8 @@
 [Full GC 和 Minor GC，傻傻分不清楚](https://mp.weixin.qq.com/s/zlc2UKMoYlFrUcGVb3_8rw)
 
 [请停止编写这么多的for循环！](https://mp.weixin.qq.com/s/7vn0ZSOkInK7oyPwh3SaQA)
+
+[实现线程的方式到底有几种？](https://mp.weixin.qq.com/s/bkxcJd-b9QR1JnJ5k06GbQ)
 
 ## Nginx
 
