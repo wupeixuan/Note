@@ -199,6 +199,8 @@
 
 [什么是数据结构？](https://mp.weixin.qq.com/s/STLpfs6dOVmeWaOW6mIO8A)
 
+[什么是链表？](https://mp.weixin.qq.com/s/ZuCcYvUtrcvJr19tDzrNnw)
+
 [剑指Offer-重建二叉树](https://mp.weixin.qq.com/s/3VqOJ0SrivlgAMPWiKEJqg)
 
 [剑指Offer-把二叉树打印成多行](https://mp.weixin.qq.com/s/rJQrF6-0B6LdSoNgd4E72g)
