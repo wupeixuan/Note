@@ -17,6 +17,8 @@
     * [程序人生](#程序人生)
     * [工具](#工具)
 
+欢迎进入我的个人博客：[武培轩的博客](https://www.tianheyu.top)
+
 **微信公众号**
 
 ![微信公众号](https://img-blog.csdnimg.cn/20200110151256933.png)
@@ -200,6 +202,10 @@
 [什么是数据结构？](https://mp.weixin.qq.com/s/STLpfs6dOVmeWaOW6mIO8A)
 
 [什么是链表？](https://mp.weixin.qq.com/s/ZuCcYvUtrcvJr19tDzrNnw)
+
+[什么是数组？](https://mp.weixin.qq.com/s/AeiLlcBMRGf2HYxy7AcBrg)
+
+[什么是栈？](https://mp.weixin.qq.com/s/NPGlJ1TjHX6ZH0KNsULYbA)
 
 [剑指Offer-重建二叉树](https://mp.weixin.qq.com/s/3VqOJ0SrivlgAMPWiKEJqg)
 
