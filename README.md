@@ -207,6 +207,8 @@
 
 [什么是栈？](https://mp.weixin.qq.com/s/NPGlJ1TjHX6ZH0KNsULYbA)
 
+[什么是队列？](https://mp.weixin.qq.com/s/mvROTx6iHmJofXZj9Qvl4A)
+
 [剑指Offer-重建二叉树](https://mp.weixin.qq.com/s/3VqOJ0SrivlgAMPWiKEJqg)
 
 [剑指Offer-把二叉树打印成多行](https://mp.weixin.qq.com/s/rJQrF6-0B6LdSoNgd4E72g)
