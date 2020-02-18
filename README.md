@@ -197,6 +197,8 @@
 
 [小米面经汇总](https://mp.weixin.qq.com/s/HIqqUdHr7yS17AsBTW9q1w)
 
+[答完这10道题，我哭了](https://mp.weixin.qq.com/s/4XBelNjgwAynsuJYUmjlMw)
+
 ## 算法
 
 [什么是数据结构？](https://mp.weixin.qq.com/s/STLpfs6dOVmeWaOW6mIO8A)
@@ -208,6 +210,8 @@
 [什么是栈？](https://mp.weixin.qq.com/s/NPGlJ1TjHX6ZH0KNsULYbA)
 
 [什么是队列？](https://mp.weixin.qq.com/s/mvROTx6iHmJofXZj9Qvl4A)
+
+[什么是哈希表？](https://mp.weixin.qq.com/s/aJPcKst7bgDyQo2oBXe_cw)
 
 [剑指Offer-重建二叉树](https://mp.weixin.qq.com/s/3VqOJ0SrivlgAMPWiKEJqg)
 
