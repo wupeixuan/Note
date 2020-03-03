@@ -90,6 +90,10 @@
 
 [手把手教你搭建 ELK 实时日志分析平台](https://mp.weixin.qq.com/s/jIXh0DIYZl_9cGP1RBNbuQ)
 
+[一篇文章带你搞定 ElasticSearch 术语](https://mp.weixin.qq.com/s/tsoBovXDcB02KxvWu2_SpQ)
+
+[搜索引擎之倒排索引浅析](https://mp.weixin.qq.com/s/Kp-KDUSFosEJOIhekw4wHw)
+
 ## Nginx
 
 [Nginx 了解一下？](https://mp.weixin.qq.com/s/FX1w12GFtceqpd48BOC6bA)
