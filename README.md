@@ -94,6 +94,10 @@
 
 [搜索引擎之倒排索引浅析](https://mp.weixin.qq.com/s/Kp-KDUSFosEJOIhekw4wHw)
 
+[ElasticSearch 分词器，了解一下](https://mp.weixin.qq.com/s/5mXFIvcJvP3RiadkpQtrpA)
+
+[ElasticSearch 文档的增删改查都不会？](https://mp.weixin.qq.com/s/q-LUgsZS-fz8DHvznTIiJA)
+
 ## Nginx
 
 [Nginx 了解一下？](https://mp.weixin.qq.com/s/FX1w12GFtceqpd48BOC6bA)
