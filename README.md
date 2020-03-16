@@ -98,6 +98,8 @@
 
 [ElasticSearch 文档的增删改查都不会？](https://mp.weixin.qq.com/s/q-LUgsZS-fz8DHvznTIiJA)
 
+[看完这篇还不会 Elasticsearch 搜索,那我就哭了！](https://mp.weixin.qq.com/s/SHHwh-1iPhfOv7qrqWVRJw)
+
 ## Nginx
 
 [Nginx 了解一下？](https://mp.weixin.qq.com/s/FX1w12GFtceqpd48BOC6bA)
