@@ -24,7 +24,7 @@
 
 ![微信公众号](https://img-blog.csdnimg.cn/20200110151256933.png)
 
-专注分享后端技术干货，包括 Java 基础、Java 并发、JVM、Nginx、Zookeeper、微服务、消息队列、源码解析、数据库、设计模式、面经等，助你编程之路少走弯路。
+专注分享后端技术干货，包括 Java 基础、Java 并发、JVM、Nginx、Zookeeper、ElasticSearch、微服务、消息队列、源码解析、数据库、设计模式、面经等，助你编程之路少走弯路。
 
 **后端技术交流群**
 
@@ -100,6 +100,8 @@
 
 [看完这篇还不会 Elasticsearch 搜索,那我就哭了！](https://mp.weixin.qq.com/s/SHHwh-1iPhfOv7qrqWVRJw)
 
+[一文搞懂 Elasticsearch 之 Mapping](https://mp.weixin.qq.com/s/y7hm4-vzGd2X_ok3sp_6GQ)
+
 ## Nginx
 
 [Nginx 了解一下？](https://mp.weixin.qq.com/s/FX1w12GFtceqpd48BOC6bA)
@@ -123,6 +125,8 @@
 [浅析 Nginx 网络事件](https://mp.weixin.qq.com/s/sNrZPbGxN-YLCOz0RocqxA)
 
 [Nginx 究竟如何处理事件？](https://mp.weixin.qq.com/s/2o_lzhyIvuYm1l9wJSCWPA)
+
+[一文搞懂 Elasticsearch 之 Mapping](https://mp.weixin.qq.com/s/y7hm4-vzGd2X_ok3sp_6GQ)
 
 ## MySQL
 
