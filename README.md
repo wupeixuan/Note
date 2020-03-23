@@ -128,6 +128,8 @@
 
 [一文搞懂 Elasticsearch 之 Mapping](https://mp.weixin.qq.com/s/y7hm4-vzGd2X_ok3sp_6GQ)
 
+[Elasticsearch 之聚合分析入门](https://mp.weixin.qq.com/s/0h4qzSvhkKrLgLQh59dk7Q)
+
 ## MySQL
 
 [数据库事务的四大特性以及隔离级别](https://mp.weixin.qq.com/s/Y-qYIEShHCEKYQHZnMLSeQ)
