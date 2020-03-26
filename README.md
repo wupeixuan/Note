@@ -66,6 +66,8 @@
 
 [Java线程的生老病死](https://mp.weixin.qq.com/s/4EDzHrAh0UUtfr4xBNXBiA)
 
+[线程数，射多少更舒适？](https://mp.weixin.qq.com/s/zgFg6oPabcqoZ-X2_nX9eQ)
+
 [Java异常处理只有Try-Catch吗？](https://mp.weixin.qq.com/s/zFkE-7jR6VK-b1C2rPJWWA)
 
 [如何编写可怕的Java代码？](https://mp.weixin.qq.com/s/MXSaSvkvTbOkDUCcQEmQaw)
@@ -81,8 +83,6 @@
 [Full GC 和 Minor GC，傻傻分不清楚](https://mp.weixin.qq.com/s/zlc2UKMoYlFrUcGVb3_8rw)
 
 [请停止编写这么多的for循环！](https://mp.weixin.qq.com/s/7vn0ZSOkInK7oyPwh3SaQA)
-
-[实现线程的方式到底有几种？](https://mp.weixin.qq.com/s/bkxcJd-b9QR1JnJ5k06GbQ)
 
 ## ElasticSearch
 
