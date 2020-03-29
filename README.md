@@ -68,6 +68,8 @@
 
 [线程数，射多少更舒适？](https://mp.weixin.qq.com/s/zgFg6oPabcqoZ-X2_nX9eQ)
 
+[如何优雅地中止线程？](https://mp.weixin.qq.com/s/glkgYlArGqo16S8UKXS9Ag)
+
 [Java异常处理只有Try-Catch吗？](https://mp.weixin.qq.com/s/zFkE-7jR6VK-b1C2rPJWWA)
 
 [如何编写可怕的Java代码？](https://mp.weixin.qq.com/s/MXSaSvkvTbOkDUCcQEmQaw)
