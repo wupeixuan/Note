@@ -66,6 +66,8 @@
 
 [Java线程的生老病死](https://mp.weixin.qq.com/s/4EDzHrAh0UUtfr4xBNXBiA)
 
+[如何优雅地中止线程？](https://mp.weixin.qq.com/s/glkgYlArGqo16S8UKXS9Ag)
+
 [线程数，射多少更舒适？](https://mp.weixin.qq.com/s/zgFg6oPabcqoZ-X2_nX9eQ)
 
 [如何优雅地中止线程？](https://mp.weixin.qq.com/s/glkgYlArGqo16S8UKXS9Ag)
