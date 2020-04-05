@@ -48,6 +48,8 @@
 
 [最大的 String 字符长度是多少？](https://mp.weixin.qq.com/s/MLoN0SZc0s_H3GcGMfoYhA)
 
+[一文搞懂 ThreadLocal 原理](https://mp.weixin.qq.com/s/HU5PTysA6gndCpYcrb-KCg)
+
 [为什么不建议使用Date，而是使用Java8新的时间和日期API？](https://mp.weixin.qq.com/s/eMtrhOMuXpvs3s_o9yA99Q)
 
 [在 Java 中如何比较日期？](https://mp.weixin.qq.com/s/o2hB2EOfdXbcu8aLbRip4Q)
@@ -71,6 +73,8 @@
 [线程数，射多少更舒适？](https://mp.weixin.qq.com/s/zgFg6oPabcqoZ-X2_nX9eQ)
 
 [如何优雅地中止线程？](https://mp.weixin.qq.com/s/glkgYlArGqo16S8UKXS9Ag)
+
+[原来 CPU 为程序性能优化做了这么多](https://mp.weixin.qq.com/s/ZzdNlbhgjGk6iTXHVIZxsg)
 
 [Java异常处理只有Try-Catch吗？](https://mp.weixin.qq.com/s/zFkE-7jR6VK-b1C2rPJWWA)
 
@@ -269,5 +273,7 @@
 ## 工具
 
 [IDEA到期了？不用怕，最新的永久激活送给你](https://mp.weixin.qq.com/s/3Ksc7rnVo4n6bu2k2M1bwQ)
+
+[听说用 Lombok 可以早点下班？](https://mp.weixin.qq.com/s/R720b6dlYntrKSsswos6eg)
 
 [后缀补全用得好，提前下班没烦恼](https://mp.weixin.qq.com/s/qDtc46iNq_s0VpQbLyBZXw)
