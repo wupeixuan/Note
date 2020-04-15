@@ -38,6 +38,10 @@
 
 ## Java
 
+[一男子给对象转账5000元，居然又退还了！](https://mp.weixin.qq.com/s/ppIJnBj66pnBzHE_Za81TA)
+
+[我就站在你面前，你却视而不见！](https://mp.weixin.qq.com/s/AIcwp6wWIs7MPyxXA7NagA)
+
 [2020 年 Java 程序员应该学习什么？](https://mp.weixin.qq.com/s/Oz_mm6RbSvQPjyDAvpQt4w)
 
 [为什么阿里巴巴Java开发手册中不建议在循环体中使用+进行字符串拼接？](https://mp.weixin.qq.com/s/dc7HW0SqEcJknMIqoQZnlg)
@@ -147,6 +151,14 @@
 [MySQL 日志系统之 redo log 和 binlog](https://mp.weixin.qq.com/s/g-QHcctt_fOmJmQQI3ISOQ)
 
 ## Redis
+
+[Redis 系列（一）五种基本数据结构](https://mp.weixin.qq.com/s/OzGqfjot7iC6UARvAkC1wQ)
+
+[Redis 系列（二）跳跃表](https://mp.weixin.qq.com/s/CCJ4c-1y4nqH2-GTQ1J1oQ)
+
+[Redis 系列（三）分布式锁深入探究](https://mp.weixin.qq.com/s/qIXOYNx776_rGwoG8vblHg)
+
+[Redis 系列（四）统计问题看这篇就够了](https://mp.weixin.qq.com/s/6S8zi8jdQDqgcgUF6XWRDw)
 
 [Redis持久化](https://mp.weixin.qq.com/s/VTJHY2-VPy6OeaQmkwdiAw)
 
