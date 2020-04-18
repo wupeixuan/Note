@@ -38,6 +38,8 @@
 
 ## Java
 
+[给学妹的 Java 学习路线](https://mp.weixin.qq.com/s/5FY87UBkqXpYvk2BiXlJ3Q)
+
 [一男子给对象转账5000元，居然又退还了！](https://mp.weixin.qq.com/s/ppIJnBj66pnBzHE_Za81TA)
 
 [我就站在你面前，你却视而不见！](https://mp.weixin.qq.com/s/AIcwp6wWIs7MPyxXA7NagA)
