@@ -44,6 +44,8 @@
 
 [我就站在你面前，你却视而不见！](https://mp.weixin.qq.com/s/AIcwp6wWIs7MPyxXA7NagA)
 
+[编译器：人家就要乱来！](https://mp.weixin.qq.com/s/f0p3vqYRacSDF728oXJxQA)
+
 [2020 年 Java 程序员应该学习什么？](https://mp.weixin.qq.com/s/Oz_mm6RbSvQPjyDAvpQt4w)
 
 [为什么阿里巴巴Java开发手册中不建议在循环体中使用+进行字符串拼接？](https://mp.weixin.qq.com/s/dc7HW0SqEcJknMIqoQZnlg)
