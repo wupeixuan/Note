@@ -40,6 +40,8 @@
 
 [给学妹的 Java 学习路线](https://mp.weixin.qq.com/s/5FY87UBkqXpYvk2BiXlJ3Q)
 
+[如何阅读源码？](https://mp.weixin.qq.com/s/Jrn8WzabaDX8hxoal3MzUw)
+
 [一男子给对象转账5000元，居然又退还了！](https://mp.weixin.qq.com/s/ppIJnBj66pnBzHE_Za81TA)
 
 [我就站在你面前，你却视而不见！](https://mp.weixin.qq.com/s/AIcwp6wWIs7MPyxXA7NagA)
@@ -163,6 +165,12 @@
 [Redis 系列（三）分布式锁深入探究](https://mp.weixin.qq.com/s/qIXOYNx776_rGwoG8vblHg)
 
 [Redis 系列（四）统计问题看这篇就够了](https://mp.weixin.qq.com/s/6S8zi8jdQDqgcgUF6XWRDw)
+
+[Redis 系列（五）亿级数据过滤和布隆过滤器](https://mp.weixin.qq.com/s/wNtpO7TtxnhoiDHuv1grXg)
+
+[Redis 系列（六）如何实现查找附近的人](https://mp.weixin.qq.com/s/jBZU4cBYvLy-HJgH-y2WaA)
+
+[Redis 系列（七）一文了解持久化](https://mp.weixin.qq.com/s/tHotvNMssq3_e6ARmFFUkA)
 
 [Redis持久化](https://mp.weixin.qq.com/s/VTJHY2-VPy6OeaQmkwdiAw)
 
