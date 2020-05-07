@@ -220,6 +220,8 @@
 
 [Spring Boot 定时任务 @Scheduled](https://mp.weixin.qq.com/s/ILMQioj2ihzSeArli3M04w)
 
+[Spring Boot 集成 Flyway 实现数据库版本控制](https://mp.weixin.qq.com/s/wjP_2LrdAbWWiwLDJKcCtA)
+
 [深入源码分析SpringMVC执行过程](https://mp.weixin.qq.com/s/jaWDPpiCuSPdhLVLVSyYcw)
 
 ## 运维
