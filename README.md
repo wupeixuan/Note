@@ -172,6 +172,10 @@
 
 [Redis 系列（七）一文了解持久化](https://mp.weixin.qq.com/s/tHotvNMssq3_e6ARmFFUkA)
 
+[Redis 系列（八）发布/订阅与 Stream](https://mp.weixin.qq.com/s/Vo6FPS2ZxKr8n8hlzpcjdg)
+
+[Redis 性能优化的 13 条军规！收好了](https://mp.weixin.qq.com/s/GjkZ_7EMeY_VUhfrRt7U0A)
+
 [Redis持久化](https://mp.weixin.qq.com/s/VTJHY2-VPy6OeaQmkwdiAw)
 
 ## ZooKeeper
@@ -303,3 +307,5 @@
 [听说用 Lombok 可以早点下班？](https://mp.weixin.qq.com/s/R720b6dlYntrKSsswos6eg)
 
 [后缀补全用得好，提前下班没烦恼](https://mp.weixin.qq.com/s/qDtc46iNq_s0VpQbLyBZXw)
+
+[不可不知的 7 个 JDK 命令](https://mp.weixin.qq.com/s/mdohLcNkzl1EpoETkEhM_w)
