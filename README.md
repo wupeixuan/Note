@@ -38,6 +38,14 @@
 
 ## Java
 
+[为什么阿里巴巴Java开发手册中强制要求接口返回值不允许使用枚举？](https://mp.weixin.qq.com/s/6_MO5jl0sgarQ5jBRal62g)
+
+[为什么阿里巴巴Java开发手册中不建议在循环体中使用+进行字符串拼接？](https://mp.weixin.qq.com/s/dc7HW0SqEcJknMIqoQZnlg)
+
+[为什么阿里巴巴Java开发手册中强制要求整型包装类对象值用 equals 方法比较？](https://mp.weixin.qq.com/s/uP9Jy75OlwavPGwVabOl8A)
+
+[为什么阿里巴巴Java开发手册中强制要求不要在foreach循环里进行元素的remove和add操作？](https://mp.weixin.qq.com/s/q4S6dCIwtDbuQ4KxSBItqA)
+
 [给学妹的 Java 学习路线](https://mp.weixin.qq.com/s/5FY87UBkqXpYvk2BiXlJ3Q)
 
 [如何阅读源码？](https://mp.weixin.qq.com/s/Jrn8WzabaDX8hxoal3MzUw)
@@ -49,12 +57,6 @@
 [编译器：人家就要乱来！](https://mp.weixin.qq.com/s/f0p3vqYRacSDF728oXJxQA)
 
 [2020 年 Java 程序员应该学习什么？](https://mp.weixin.qq.com/s/Oz_mm6RbSvQPjyDAvpQt4w)
-
-[为什么阿里巴巴Java开发手册中不建议在循环体中使用+进行字符串拼接？](https://mp.weixin.qq.com/s/dc7HW0SqEcJknMIqoQZnlg)
-
-[为什么阿里巴巴Java开发手册中强制要求整型包装类对象值用 equals 方法比较？](https://mp.weixin.qq.com/s/uP9Jy75OlwavPGwVabOl8A)
-
-[为什么阿里巴巴Java开发手册中强制要求不要在foreach循环里进行元素的remove和add操作？](https://mp.weixin.qq.com/s/q4S6dCIwtDbuQ4KxSBItqA)
 
 [最大的 String 字符长度是多少？](https://mp.weixin.qq.com/s/MLoN0SZc0s_H3GcGMfoYhA)
 
@@ -173,6 +175,8 @@
 [Redis 系列（七）一文了解持久化](https://mp.weixin.qq.com/s/tHotvNMssq3_e6ARmFFUkA)
 
 [Redis 系列（八）发布/订阅与 Stream](https://mp.weixin.qq.com/s/Vo6FPS2ZxKr8n8hlzpcjdg)
+
+[Redis 系列（九）史上最强集群实践教程](https://mp.weixin.qq.com/s/TlnSM3MSvkSrx25xA6RqHQ)
 
 [Redis 性能优化的 13 条军规！收好了](https://mp.weixin.qq.com/s/GjkZ_7EMeY_VUhfrRt7U0A)
 
