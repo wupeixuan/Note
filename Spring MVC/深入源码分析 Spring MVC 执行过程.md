@@ -1,10 +1,10 @@
-本文主要讲解 SpringMVC 执行过程，并针对相关源码进行解析。
+本文主要讲解 Spring MVC 执行过程，并针对相关源码进行解析。
 
 首先，让我们从 Spring MVC 的四大组件:**前端控制器（DispatcherServlet）、处理器映射器（HandlerMapping）、处理器适配器（HandlerAdapter）以及视图解析器（ViewResolver）** 的角度来看一下 Spring MVC 对用户请求的处理过程，过程如下图所示:
 
 ![](https://img-blog.csdnimg.cn/20200221001135320.png)
 
-# SpringMVC 执行过程
+# Spring MVC 执行过程
 
 1. 用户请求发送到**前端控制器 DispatcherServlet**。
 2. 前端控制器 DispatcherServlet 接收到请求后，DispatcherServlet 会使用 HandlerMapping 来处理，**HandlerMapping 会查找到具体进行处理请求的 Handler 对象**。
@@ -16,7 +16,7 @@
 8. DispatcherServlet 接收到视图之后，会根据上面的 ModelAndView 中的 model 来进行视图中数据的填充，也就是所谓的**视图渲染**。
 9. 渲染完成之后，DispatcherServlet 就可以将结果返回给用户了。
 
-在了解了大概的执行过程后，让我们一起去从源码角度去深入探索（SpringMVC 版本为 5.2.3）：
+在了解了大概的执行过程后，让我们一起去从源码角度去深入探索（Spring MVC 版本为 5.2.3）：
 
 我们先创建一个 Controller 以便进行 debug，内容如下：
 
@@ -46,7 +46,7 @@ public class SpringMvcController {
 </html>
 ```
 
-好了，然后启动程序，让我们访问 `http://localhost:8080/testSpringMvc`，来一步一步探索 SpringMVC 的执行过程：
+好了，然后启动程序，让我们访问 `http://localhost:8080/testSpringMvc`，来一步一步探索 Spring MVC 的执行过程：
 
 # 源码解析
 
@@ -87,7 +87,7 @@ protected void doService(HttpServletRequest request, HttpServletResponse respons
             }
         }
     }
-    // 如果没有配置本地化或者主题的处理器之类的，SpringMVC 会使用默认的配置文件，即 DispatcherServlet.properties
+    // 如果没有配置本地化或者主题的处理器之类的，Spring MVC 会使用默认的配置文件，即 DispatcherServlet.properties
     request.setAttribute(WEB_APPLICATION_CONTEXT_ATTRIBUTE, getWebApplicationContext());
     request.setAttribute(LOCALE_RESOLVER_ATTRIBUTE, this.localeResolver);
     request.setAttribute(THEME_RESOLVER_ATTRIBUTE, this.themeResolver);
@@ -505,7 +505,7 @@ ThymeleafView 的 render 方法又调用 **renderFragment** 方法进行视图�
 
 # 总结
 
-通过本文的源码分析，我相信我们都能够清楚的认识到 SpringMVC 执行流程，进一步加深对 SpringMVC 的理解。
+通过本文的源码分析，我相信我们都能够清楚的认识到 Spring MVC 执行流程，进一步加深对 Spring MVC 的理解。
 
 > 参考
 > 

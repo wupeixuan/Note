@@ -8,6 +8,7 @@
     * [微服务](#微服务)
     * [网络](#网络)
     * [设计模式](#设计模式)
+    * [Spring MVC](#spring-mvc)
     * [Spring Boot](#spring-boot)
     * [运维](#运维)
     * [Git](#git)
@@ -222,15 +223,19 @@
 
 [设计模式-抽象工厂模式](https://mp.weixin.qq.com/s/PpiwCsgw2mt3OWd0nsjxhg)
 
+## Spring MVC
+
+[深入源码分析 Spring MVC 执行过程](https://mp.weixin.qq.com/s/jaWDPpiCuSPdhLVLVSyYcw)
+
 ## Spring Boot
 
 [如何定制 Spring Boot 的 Banner？](https://mp.weixin.qq.com/s/ltMTsrl6fGNLSCq9UDYQxA)
 
 [Spring Boot 定时任务 @Scheduled](https://mp.weixin.qq.com/s/ILMQioj2ihzSeArli3M04w)
 
-[Spring Boot 集成 Flyway 实现数据库版本控制](https://mp.weixin.qq.com/s/wjP_2LrdAbWWiwLDJKcCtA)
+[Spring Boot 集成 Swagger 构建接口文档](https://mp.weixin.qq.com/s/wXUEuF80ph9Dwgyy2wS9DA)
 
-[深入源码分析SpringMVC执行过程](https://mp.weixin.qq.com/s/jaWDPpiCuSPdhLVLVSyYcw)
+[Spring Boot 集成 Flyway 实现数据库版本控制](https://mp.weixin.qq.com/s/wjP_2LrdAbWWiwLDJKcCtA)
 
 ## 运维
 
