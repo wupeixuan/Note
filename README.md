@@ -229,6 +229,8 @@
 
 ## Spring Boot
 
+[如何优雅地停止 Spring Boot 应用？](https://mp.weixin.qq.com/s/o1NM1WnB6Q3fbvsfrPO1aw)
+
 [如何定制 Spring Boot 的 Banner？](https://mp.weixin.qq.com/s/ltMTsrl6fGNLSCq9UDYQxA)
 
 [Spring Boot 定时任务 @Scheduled](https://mp.weixin.qq.com/s/ILMQioj2ihzSeArli3M04w)
