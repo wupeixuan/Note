@@ -39,6 +39,8 @@
 
 ## Java
 
+[为什么阿里巴巴Java开发手册中不允许魔法值出现在代码中？](https://mp.weixin.qq.com/s/fg9NjY6Lzr6KKTbvyWddQg)
+
 [为什么阿里巴巴Java开发手册中强制要求接口返回值不允许使用枚举？](https://mp.weixin.qq.com/s/6_MO5jl0sgarQ5jBRal62g)
 
 [为什么阿里巴巴Java开发手册中不建议在循环体中使用+进行字符串拼接？](https://mp.weixin.qq.com/s/dc7HW0SqEcJknMIqoQZnlg)
