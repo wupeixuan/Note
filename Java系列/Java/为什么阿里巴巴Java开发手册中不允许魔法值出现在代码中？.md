@@ -10,7 +10,7 @@
 
 ## 静态常量取代魔法值
 
-例如：
+像下面这个例子：
 
 ```
 if (billCount > 75) {
@@ -46,7 +46,71 @@ boolean isActiveProject = value > 60 && value <= 80 && type = 1;
 
 ## 枚举类取代魔法值
 
+还有一种消除魔法值的方式是使用枚举类代替，下面让我们举个例子：
 
+```
+if (eventId == 1) {
+    System.out.println("睡觉");
+} else if (eventId == 2) {
+    System.out.println("吃饭");
+} else if (eventId == 3) {
+    System.out.println("打豆豆");
+}
+```
+
+如上代码是针对事件 id 去执行相应的事件，如果事件比较少，大家还可以勉强记住每个 eventId 对应的含义，但是随着事件 id 的增多，很可能会发生，新来的员工把事件 id 给搞混了，导致执行错误的事件，发生 bug。
+
+那么我们可以使用枚举类来表示相应的事件：
+
+```
+public enum EventEnum {
+
+    /**
+     * 睡觉
+     */
+    SLEEP_EVENT(1, "睡觉"),
+
+    /**
+     * 吃饭
+     */
+    EAT_EVENT(2, "吃饭"),
+
+    /**
+     * 打豆豆
+     */
+    FIGHT_PEA_EVENT(3, "打豆豆");
+
+    private int eventId;
+    private String desc;
+
+    EventEnum(int eventId, String desc) {
+        this.eventId = eventId;
+        this.desc = desc;
+    }
+
+    public int getEventId() {
+        return eventId;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+}
+```
+
+修改完之后的代码如下：
+
+```
+if (eventId == EventEnum.SLEEP_EVENT.getEventId()) {
+    System.out.println("睡觉");
+} else if (eventId == EventEnum.EAT_EVENT.getEventId()) {
+    System.out.println("吃饭");
+} else if (eventId == EventEnum.FIGHT_PEA_EVENT.getEventId()) {
+    System.out.println("打豆豆");
+}
+```
+
+是不是可读性急剧提升，还不快看看自己代码中有没有这样的魔法值出现，有的话赶紧改造起来。
 
 还有如果你需要在不同的地点引用同一数值，魔法数会让你烦恼不已，因为一旦这些数字发生改变，就必须在程序中找到所有的魔法值，并将它们全部修改一遍，这样就太费时费力了。
 
@@ -54,7 +118,11 @@ boolean isActiveProject = value > 60 && value <= 80 && type = 1;
 
 # 总结
 
+本文主要介绍了为什么不允许在代码中出现魔法值以及如何将代码中已有的魔法值去除掉。
 
+代码可读性还是比较重要的，你肯定不希望别人在接手你的代码的时候，骂到这数字啥意思，这代码写得跟粑粑一样。
+
+**最好的关系就是互相成就**，大家的**在看、转发、留言**三连就是我创作的最大动力。
 
 > 参考
 > 
