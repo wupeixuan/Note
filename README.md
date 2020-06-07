@@ -33,11 +33,13 @@
 
 所以，如果你想和众多优秀的人一起学习，可以考虑加入技术交流群。扫描微信二维码，备注【加群】添加好友，我会迅速拉你进群。
 
-![微信二维码](https://img-blog.csdnimg.cn/202001101531450.jpg)
+![微信二维码](https://img-blog.csdnimg.cn/20200607182712830.jpg)
 
 # 文章目录
 
 ## Java
+
+[性能调优必备利器之 JMH](https://mp.weixin.qq.com/s/Uvbv0-Hx3aa7o0WnGTK0ig)
 
 [为什么阿里巴巴Java开发手册中不允许魔法值出现在代码中？](https://mp.weixin.qq.com/s/fg9NjY6Lzr6KKTbvyWddQg)
 

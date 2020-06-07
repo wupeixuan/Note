@@ -178,4 +178,4 @@ kill -USR1 $(cat /usr/local/nginx/logs/nginx.pid)
 # 总结
 这篇文章主要介绍了 Nginx 命令行相关知识，并介绍了重载配置文件、Nginx 热部署、日志切割等操作，还是需要多实践操作，实践出真知。
 
-![image](https://img-blog.csdnimg.cn/20191102012406881.png)
+![Nginx 命令行](https://img-blog.csdnimg.cn/20191102012406881.png)
