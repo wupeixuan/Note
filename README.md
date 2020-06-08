@@ -324,3 +324,5 @@
 [后缀补全用得好，提前下班没烦恼](https://mp.weixin.qq.com/s/qDtc46iNq_s0VpQbLyBZXw)
 
 [不可不知的 7 个 JDK 命令](https://mp.weixin.qq.com/s/mdohLcNkzl1EpoETkEhM_w)
+
+[5 个 IDEA 必备插件，让效率成为习惯](https://mp.weixin.qq.com/s/nPa-nx4DYtYotJI29I_ZwA)
