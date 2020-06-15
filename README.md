@@ -39,6 +39,8 @@
 
 ## Java
 
+[Java 线程池中的线程复用是如何实现的？](https://mp.weixin.qq.com/s/uDiGnU7Ik9VNOGIfDZHNAw)
+
 [性能调优必备利器之 JMH](https://mp.weixin.qq.com/s/Uvbv0-Hx3aa7o0WnGTK0ig)
 
 [为什么阿里巴巴Java开发手册中不允许魔法值出现在代码中？](https://mp.weixin.qq.com/s/fg9NjY6Lzr6KKTbvyWddQg)
