@@ -257,6 +257,8 @@
 
 ## Git
 
+[一个故事带你了解版本控制](https://mp.weixin.qq.com/s/sd5aMaBAP2toGKWfdKo7_A)
+
 [请停止编写糟糕的提交消息！](https://mp.weixin.qq.com/s/VItk9iKdXitjSYkVCTxq2g)
 
 [看完这篇还不会用Git，那我就哭了！](https://mp.weixin.qq.com/s/JOCfkKPQE3UvwhP7h9_UmA)
