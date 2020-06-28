@@ -41,6 +41,142 @@ public class WebSocketConfiguration {
 }
 ```
 
+### 编写端点服务类
+
+接下来使用 `@ServerEndpoint` 定义一个端点服务类，在端点服务类中，可以定义 WebSocket 的打开、关闭、错误和发送消息的方法，具体代码如下所示：
+
+```
+@ServerEndpoint("/websocket/{userId}")
+@Component
+public class WebSocketServer {
+
+    private static final Logger log = LogManager.getLogger(WebSocketServer.class);
+
+    /**
+     * 当前在线连接数
+     */
+    private static AtomicInteger onlineCount = new AtomicInteger(0);
+
+    /**
+     * 用来存放每个客户端对应的 WebSocket 对象
+     */
+    private static ConcurrentHashMap<String, WebSocketServer> webSocketMap = new ConcurrentHashMap<>();
+
+    /**
+     * 与某个客户端的连接会话，需要通过它来给客户端发送数据
+     */
+    private Session session;
+
+    /**
+     * 接收 userId
+     */
+    private String userId = "";
+
+    /**
+     * 连接建立成功调用的方法
+     */
+    @OnOpen
+    public void onOpen(Session session, @PathParam("userId") String userId) {
+        this.session = session;
+        this.userId = userId;
+        if (webSocketMap.containsKey(userId)) {
+            webSocketMap.remove(userId);
+            webSocketMap.put(userId, this);
+        } else {
+            webSocketMap.put(userId, this);
+            addOnlineCount();
+        }
+        log.info("用户连接:" + userId + ",当前在线人数为:" + getOnlineCount());
+        try {
+            sendMessage("连接成功！");
+        } catch (IOException e) {
+            log.error("用户:" + userId + ",网络异常!!!!!!");
+        }
+    }
+
+    /**
+     * 连接关闭调用的方法
+     */
+    @OnClose
+    public void onClose() {
+        if (webSocketMap.containsKey(userId)) {
+            webSocketMap.remove(userId);
+            subOnlineCount();
+        }
+        log.info("用户退出:" + userId + ",当前在线人数为:" + getOnlineCount());
+    }
+
+    /**
+     * 收到客户端消息后调用的方法
+     *
+     * @param message 客户端发送过来的消息
+     */
+    @OnMessage
+    public void onMessage(String message, Session session) {
+        log.info("用户消息:" + userId + ",报文:" + message);
+        if (StringUtils.isEmpty(message)) {
+            try {
+                JSONObject jsonObject = JSON.parseObject(message);
+                // 追加发送人(防止串改)
+                jsonObject.put("fromUserId", this.userId);
+                String toUserId = jsonObject.getString("toUserId");
+                // 传送给对应 toUserId 用户的 websocket
+                if (StringUtils.isEmpty(toUserId) && webSocketMap.containsKey(toUserId)) {
+                    webSocketMap.get(toUserId).sendMessage(jsonObject.toJSONString());
+                } else {
+                    log.error("请求的 userId:" + toUserId + "不在该服务器上");
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    /**
+     * 发生错误时调用
+     *
+     * @param session
+     * @param error
+     */
+    @OnError
+    public void onError(Session session, Throwable error) {
+        log.error("用户错误:" + this.userId + ",原因:" + error.getMessage());
+        error.printStackTrace();
+    }
+
+    /**
+     * 实现服务器主动推送
+     */
+    public void sendMessage(String message) throws IOException {
+        this.session.getBasicRemote().sendText(message);
+    }
+
+    /**
+     * 发送自定义消息
+     */
+    public static void sendInfo(String message, @PathParam("userId") String userId) throws IOException {
+        log.info("发送消息到:" + userId + "，报文:" + message);
+        if (!StringUtils.isEmpty(userId) && webSocketMap.containsKey(userId)) {
+            webSocketMap.get(userId).sendMessage(message);
+        } else {
+            log.error("用户" + userId + ",不在线！");
+        }
+    }
+
+    public static synchronized AtomicInteger getOnlineCount() {
+        return onlineCount;
+    }
+
+    public static synchronized void addOnlineCount() {
+        WebSocketServer.onlineCount.getAndIncrement();
+    }
+
+    public static synchronized void subOnlineCount() {
+        WebSocketServer.onlineCount.getAndDecrement();
+    }
+}
+```
+
 
 
 # 总结
