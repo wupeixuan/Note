@@ -192,7 +192,7 @@ public class WebSocketServer {
 
 本文简单地介绍了 Spring Boot 集成 WebSocket 实现服务端主动推送消息到客户端，是不是十分简单呢？大家可以自己也写个 demo 试试！
 
-本文的完整代码在 https://github.com/wupeixuan/SpringBoot-Learn 的 `websocket` 目录下。
+本文的完整代码在 `https://github.com/wupeixuan/SpringBoot-Learn` 的 `websocket` 目录下。
 
 **最好的关系就是互相成就**，大家的**点赞、在看、转发、留言**就是我创作的最大动力。
 
