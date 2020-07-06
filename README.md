@@ -235,6 +235,10 @@
 
 ## Spring Boot
 
+[Spring Boot 集成 Elasticsearch 实战](https://mp.weixin.qq.com/s/9SqeCzWH_-NOEGmEwKpZ7g)
+
+[Spring Boot 集成 WebSocket 实现服务端推送消息到客户端](https://mp.weixin.qq.com/s/w7zriKMr54KWsxTzOBAg4Q)
+
 [如何优雅地停止 Spring Boot 应用？](https://mp.weixin.qq.com/s/o1NM1WnB6Q3fbvsfrPO1aw)
 
 [如何定制 Spring Boot 的 Banner？](https://mp.weixin.qq.com/s/ltMTsrl6fGNLSCq9UDYQxA)
