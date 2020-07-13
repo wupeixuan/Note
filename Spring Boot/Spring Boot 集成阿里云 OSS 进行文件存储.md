@@ -1,8 +1,10 @@
-最近因为项目中需要存储很多的图片，不想存储到服务器上，因此就直接选用阿里云的对象服务（Object Storage Service，简称 OSS）来进行存储，本文将介绍 Spring Boot 集成 OSS 的一个完整过程。
+最近因为项目中需要存储很多的图片，不想存储到服务器上，因此就直接选用阿里云的对象服务（`Object Storage Service`，简称 OSS）来进行存储，本文将介绍 Spring Boot 集成 OSS 的一个完整过程。
 
 那么 OSS 是什么呢？
 
 简而言之，OSS 是一种海量、安全、低成本、高可靠的云存储服务。
+
+关于 OSS 的知识就不再这里赘述了，大家可以自行学习下。
 
 ## 开通 OSS
 
@@ -55,7 +57,7 @@ spring.servlet.multipart.max-file-size=10MB
 
 其中指定了 OSS 的访问域名、密钥以及存储空间 Bucket 的名称等。
 
-然后在 config 包下创建 `OSSConfiguration` 类，会从配置文件中读取到对应的参数。
+然后在 config 包下创建 `OSSConfiguration` 类，会从配置文件中读取到对应的参数，并且把 ossClient 单例化。
 
 ```
 @Configuration
@@ -122,20 +124,19 @@ public class OSSConfiguration {
 
 ### 服务类
 
-在这里主要介绍 OSS 的上传、下载、删除、查看 URL 等简单操作，在 `service` 包下创建 `OSSService` 类。
+在这里主要介绍 OSS 的上传、下载、删除、查看 URL 等简单操作，在 `service` 包下创建 `OSSService` 类，然后注入 `ossClient` 和 `ossConfiguration`。
 
 #### 上传文件
+
+首先来看下如何上传文件，首先通过 UUID 生成文件名，防止重复，再创建一个 `ObjectMetadata`，可以设置用户自定义的元数据以及 HTTP 头，比如内容长度，ETag 等，最后通过调用 `ossClient` 的 `putObject` 方法来完成文件上传，并返回文件名，具体代码如下所示：
 
 ```
 public String uploadFile(MultipartFile file, String storagePath) {
     String fileName = "";
     try {
-        // 创建一个唯一的文件名，类似于id，就是保存在OSS服务器上文件的文件名
         fileName = UUID.randomUUID().toString();
         InputStream inputStream = file.getInputStream();
-        // 设置对象
         ObjectMetadata objectMetadata = new ObjectMetadata();
-        // 设置数据流里有多少个字节可以读取
         objectMetadata.setContentLength(inputStream.available());
         objectMetadata.setCacheControl("no-cache");
         objectMetadata.setHeader("Pragma", "no-cache");
@@ -143,8 +144,7 @@ public String uploadFile(MultipartFile file, String storagePath) {
         objectMetadata.setContentDisposition("inline;filename=" + fileName);
         fileName = storagePath + "/" + fileName;
         // 上传文件
-        PutObjectResult result = ossClient.putObject(ossConfiguration.getBucketName(), fileName, inputStream, objectMetadata);
-        log.info("result:{}", result);
+        ossClient.putObject(ossConfiguration.getBucketName(), fileName, inputStream, objectMetadata);
     } catch (IOException e) {
         log.error("Error occurred: {}", e.getMessage(), e);
     }
@@ -152,7 +152,26 @@ public String uploadFile(MultipartFile file, String storagePath) {
 }
 ```
 
+编写对应的 `Controller` 层，调用上传文件接口后，在文件管理中可以看到文件已经上传成功了：
+
+![上传文件](https://img-blog.csdnimg.cn/20200713222546198.png)
+
+#### 获取文件列表
+
+可以通过 `ListObjectsRequest` 构建请求参数，比如设置 Bucket 名称和列举文件的最大个数，然后调用 `ossClient` 的 `listObjects` 方法就可以获取到 `objectListing`，再获取文件的元信息，最后将文件名称返回，具体代码如下：
+
+```
+public List<String> listObjects() {
+    ListObjectsRequest listObjectsRequest = new ListObjectsRequest(ossConfiguration.getBucketName()).withMaxKeys(200);
+    ObjectListing objectListing = ossClient.listObjects(listObjectsRequest);
+    List<OSSObjectSummary> objectSummaries = objectListing.getObjectSummaries();
+    return objectSummaries.stream().map(OSSObjectSummary::getKey).collect(Collectors.toList());
+}
+```
+
 #### 判断文件是否存在
+
+判断文件是否存在，直接通过 `ossClient` 的 `doesObjectExist` 方法就可以进行判断，传入的参数为 Bucket 名称和文件名称，具体代码如下：
 
 ```
 public boolean doesObjectExist(String fileName) {
@@ -172,9 +191,10 @@ public boolean doesObjectExist(String fileName) {
 
 #### 下载文件
 
+下载存储在 OSS 的文件，首先需要传入 Bucket 名称和文件名称调用 `ossClient` 的 `getObject` 方法获取 `ossObject`，`ossObject` 包含文件所在的存储空间名称、文件名称、文件元信息以及一个输入流，然后调用 `ossObject` 的 `getObjectContent` 方法获取输入流，然后进行文件的下载，具体代码如下：
+
 ```
 public void exportFile(OutputStream os, String objectName) {
-    // ossObject包含文件所在的存储空间名称、文件名称、文件元信息以及一个输入流。
     OSSObject ossObject = ossClient.getObject(ossConfiguration.getBucketName(), objectName);
     // 读取文件内容
     BufferedInputStream in = new BufferedInputStream(ossObject.getObjectContent());
@@ -192,7 +212,11 @@ public void exportFile(OutputStream os, String objectName) {
 }
 ```
 
+![](https://img-blog.csdnimg.cn/20200713225007225.png)
+
 #### 删除文件
+
+删除文件也比较简单，直接调用 `deleteObject` 方法，传入对应的 Bucket 名称和文件名称即可，具体代码如下：
 
 ```
 public void deleteFile(String fileName) {
@@ -206,33 +230,41 @@ public void deleteFile(String fileName) {
 
 #### 查看 URL
 
+获取文件的访问地址可以调用 `ossClient` 的 `generatePresignedUrl`，在调用的时候还需要设置过期时间，具体代码如下：
+
 ```
-public URL getSingeNatureUrl(String filename, int expSeconds) {
-    if (expSeconds == 0) {
-        expSeconds = 3600 * 1000;
-    } else {
-        expSeconds = expSeconds * 1000;
+public String getSingeNatureUrl(String filename, int expSeconds) {
+    Date expiration = new Date(System.currentTimeMillis() + expSeconds * 1000);
+    URL url = ossClient.generatePresignedUrl(ossConfiguration.getBucketName(), filename, expiration);
+    if (url != null) {
+        return url.toString();
     }
-    GeneratePresignedUrlRequest request = new GeneratePresignedUrlRequest(ossConfiguration.getBucketName(), filename);
-    Date expiration = new Date(System.currentTimeMillis() + expSeconds);
-    request.setExpiration(expiration);
-    URL url = null;
-    try {
-        url = ossClient.generatePresignedUrl(ossConfiguration.getBucketName(), filename, expiration);
-    } catch (ClientException e) {
-        log.error("Error occurred: {}", e.getMessage(), e);
-    }
-    return url;
+    return null;
 }
 ```
+
+通过调用接口即可返回文件对应的 url 地址，我们通过 url 就可以访问图片，效果如下：
+
+![](https://img-blog.csdnimg.cn/20200713233152781.png)
+
+到此为止，OSS 的基本操作就简单介绍完了，大家可以多动手试试，不会的可以看下官方的帮助文档。
+
+##### 跨域规则
+
+阿里云 OSS 解决请求跨越问题：进入对应的 Bucket，然后依次点击权限管理->跨越设置->创建规则，然后填写上对应的规则，具体如下图所示：
+
+![跨域规则](https://img-blog.csdnimg.cn/20200713220728125.png)
 
 # 总结
 
 本文的完整代码在 `https://github.com/wupeixuan/SpringBoot-Learn` 的 `oss` 目录下。
 
+Spring Boot 结合 OSS 还是比较简单的，大家可以下载项目源码，自己在本地运行调试这个项目，更好地理解如何在 Spring Boot 中构建基于 OSS 的应用。
 
 **最好的关系就是互相成就**，大家的**点赞、在看、分享、留言**就是我创作的最大动力。
 
 > 参考
 >
 > https://github.com/wupeixuan/SpringBoot-Learn
+>
+> https://help.aliyun.com/document_detail/32008.html
