@@ -129,6 +129,8 @@
 
 [一文搞懂 Elasticsearch 之 Mapping](https://mp.weixin.qq.com/s/y7hm4-vzGd2X_ok3sp_6GQ)
 
+[Elasticsearch 之 Filter 与 Query 有啥不同？](https://mp.weixin.qq.com/s/5_ejnaU6aucguOXtzM-d9A)
+
 ## Nginx
 
 [Nginx 了解一下？](https://mp.weixin.qq.com/s/FX1w12GFtceqpd48BOC6bA)
@@ -234,6 +236,8 @@
 [深入源码分析 Spring MVC 执行过程](https://mp.weixin.qq.com/s/jaWDPpiCuSPdhLVLVSyYcw)
 
 ## Spring Boot
+
+[Spring Boot 集成阿里云 OSS 进行文件存储](https://mp.weixin.qq.com/s/I1fG-qjNbeRuYNJ9NmTCIQ)
 
 [Spring Boot 集成 Elasticsearch 实战](https://mp.weixin.qq.com/s/9SqeCzWH_-NOEGmEwKpZ7g)
 
