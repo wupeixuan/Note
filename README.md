@@ -39,6 +39,8 @@
 
 ## Java
 
+[为什么阿里巴巴Java开发手册中强制要求超大整数禁止使用Long类型返回？](https://mp.weixin.qq.com/s/FfBSHwDLNlBw3ShsAX6Tgw)
+
 [Java 线程池中的线程复用是如何实现的？](https://mp.weixin.qq.com/s/uDiGnU7Ik9VNOGIfDZHNAw)
 
 [性能调优必备利器之 JMH](https://mp.weixin.qq.com/s/Uvbv0-Hx3aa7o0WnGTK0ig)
@@ -167,6 +169,8 @@
 
 [MySQL 日志系统之 redo log 和 binlog](https://mp.weixin.qq.com/s/g-QHcctt_fOmJmQQI3ISOQ)
 
+[如何定位 MySQL 慢查询？](https://mp.weixin.qq.com/s/_SWewX-8nFam20Wcg6No1Q)
+
 ## Redis
 
 [Redis 系列（一）五种基本数据结构](https://mp.weixin.qq.com/s/OzGqfjot7iC6UARvAkC1wQ)
@@ -237,6 +241,12 @@
 
 ## Spring Boot
 
+[Spring Boot 集成 XXL-JOB 任务调度平台](https://mp.weixin.qq.com/s/H6Wd6B7qYexcRMigWsf5zg)
+
+[Spring Boot 优雅地发送邮件](https://mp.weixin.qq.com/s/BpnnGgUm-3cmYv5qPKMEvQ)
+
+[Spring Boot 集成 Redis 实现数据缓存](https://mp.weixin.qq.com/s/mk98foCaW7tF076JEOZDwQ)
+
 [Spring Boot 集成阿里云 OSS 进行文件存储](https://mp.weixin.qq.com/s/I1fG-qjNbeRuYNJ9NmTCIQ)
 
 [Spring Boot 集成 Elasticsearch 实战](https://mp.weixin.qq.com/s/9SqeCzWH_-NOEGmEwKpZ7g)
@@ -254,6 +264,8 @@
 [Spring Boot 集成 Flyway 实现数据库版本控制](https://mp.weixin.qq.com/s/wjP_2LrdAbWWiwLDJKcCtA)
 
 ## 运维
+
+[这些排查内存问题的命令，你用过多少？](https://mp.weixin.qq.com/s/1mdFnmHXLK3j5x75ecdx1Q)
 
 [每个开发人员都应该知道的11个Linux命令](https://mp.weixin.qq.com/s/ZPz_rvXPgn3NBGXWVViouQ)
 
@@ -338,3 +350,7 @@
 [不可不知的 7 个 JDK 命令](https://mp.weixin.qq.com/s/mdohLcNkzl1EpoETkEhM_w)
 
 [5 个 IDEA 必备插件，让效率成为习惯](https://mp.weixin.qq.com/s/nPa-nx4DYtYotJI29I_ZwA)
+
+[真香，Typora 原生集成 PicGo 图床工具！](https://mp.weixin.qq.com/s/9-qg3mBxffgAGP2usAYhQA)
+
+[不会真的有人 GitHub 还可以这样吧！](https://mp.weixin.qq.com/s/i6QKMGyo6anphsCjN7e8Qw)
