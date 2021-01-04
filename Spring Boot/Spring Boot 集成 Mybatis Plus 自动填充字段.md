@@ -174,7 +174,10 @@ public class AutoFillTest {
 
 启动测试类，通过日志可以看出来：
 
-![](https://wupx-1256189981.file.myqcloud.com/img/202012/31/1609400185.png)
+```
+before user:UserEntity(id=1346071927831134210, name=wupx, age=18, email=wupx@qq.com, createTime=Mon Jan 04 20:32:11 CST 2021, modifyTime=Mon Jan 04 20:32:11 CST 2021)
+query user:UserEntity(id=1346071927831134210, name=wupx, age=19, email=wupx@qq.com, createTime=Mon Jan 04 20:32:11 CST 2021, modifyTime=Mon Jan 04 20:32:13 CST 2021)
+```
 
 第一次插入对象的时候，创建时间和修改时间都自动填充了，当修改对象的时候，修改时间也相应的进行了更新。
 
